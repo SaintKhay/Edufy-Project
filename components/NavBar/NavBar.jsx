@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../../src/assets/images/logo.svg";
 import searchIcon from "../../src/assets/images/search-icon.svg";
 import dropdown from "../../src/assets/images/dropdown-icon.svg";
@@ -7,9 +7,19 @@ import { navBarMarkup } from "./navbar";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrolled(window.scrollY > 50);
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header className="container">
-      <nav id="section-1">
+      <nav id="section-1" className={scrolled ? "nav active" : "nav"}>
         <img
           className={styles.logo}
           src={logo}
@@ -35,15 +45,14 @@ export default function Navbar() {
         </ul>
 
         <span className={styles.signin}>
-          <button className={styles.menubtn} onClick={() => setOpen(!open)}>
-            ☰
-          </button>
-
           <img
             src={searchIcon}
             alt="Search Icon"
             className={styles.searchicon}
           />
+          <button className={styles.menubtn} onClick={() => setOpen(!open)}>
+            ☰
+          </button>
           <button className={styles.loginbtn}>Join Our Course</button>
         </span>
       </nav>

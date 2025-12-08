@@ -37,7 +37,7 @@ body {
   width: 100%;
 }
 .page-text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 2.6rem;
   font-weight: 300;
   color: #626965;
@@ -52,7 +52,7 @@ button {
   border-radius: 60px;
   border: 1px solid transparent;
   padding: 1em 2.4rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
@@ -103,7 +103,7 @@ button:focus-visible {
 }
 .about-section {
   background-color: #f0f5f2;
-  padding: 5rem 2.4rem;
+  padding: 5rem 0rem;
 }
 .about-container {
   display: grid;
@@ -184,6 +184,11 @@ button:focus-visible {
   font-weight: 600;
   line-height: 5.5rem;
   padding-bottom: 1rem;
+}
+@media (max-width: 439px) {
+  .headtitletext {
+    text-align: left;
+  }
 }
 
 /* Test */
@@ -270,6 +275,10 @@ button:focus-visible {
   }
 }
 @media (max-width: 430px) {
+  .secondary-header {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
   .headtitle {
     font-size: 3.8rem;
     text-align: left;
@@ -291,9 +300,16 @@ button:focus-visible {
   }
   .about-us-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
   .aboutussubhead {
     font-size: 1.8rem;
+  }
+  .about-container {
+    gap: 2rem;
+  }
+  .about-us-image {
+    grid-row: 2/3;
   }
   .padding-btm {
     padding-bottom: 3rem;

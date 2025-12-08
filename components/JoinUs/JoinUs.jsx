@@ -2,17 +2,19 @@ import joinImg from "../../src/assets/images/join-img.svg";
 import joinImg2 from "../../src/assets/images/join-img2.svg";
 import styles from "../../components/JoinUs/JoinUs.module.css";
 import { joinSubsectionData } from "./join";
+import Head from "../Head";
 
 export default function Join() {
   return (
     <section className={`${styles.joinsection} container section-padding`}>
       <div className={styles.joincontainer}>
-        <h1 className={styles.joinhead}>Join our free workshop</h1>
-        <p className={`{styles.jointext} page-text`}>
-          Join our free workshops to unlock a world of learning and growth
-          opportunities! Our workshops <br /> are designed to cater to a diverse
-          range of interests and skill levels.
-        </p>
+        <Head
+          title="Join our free workshop"
+          textfirst=" Join our free workshops to unlock a world of learning and growth
+          opportunities! Our workshops"
+          textsecond="are designed to cater to a diverse
+          range of interests and skill levels"
+        />
       </div>
       <div className={styles.joinsubcontainer}>
         <img loading="lazy" src={joinImg} className={styles.joinimage}></img>

@@ -3,8 +3,7 @@ export default function Head(prop) {
     <div className="headtextcontent">
       <h2 className="headtitle  secondary-header">{prop.title}</h2>
       <p className="page-text">
-        {prop.textfirst}
-        <br /> {prop.textsecond}
+        {prop.textfirst} {prop.textsecond}
       </p>
     </div>
   );

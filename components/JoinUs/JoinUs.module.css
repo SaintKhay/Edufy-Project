@@ -125,4 +125,14 @@
     top: 0%;
     width: 90%;
   }
+  .joincontainer {
+    margin-bottom: 11rem;
+  }
+  .joinsubhead {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  .joinsubsection2 {
+    gap: 2rem;
+  }
 }

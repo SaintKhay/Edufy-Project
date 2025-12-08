@@ -25,7 +25,11 @@ export default function AboutUs() {
   return (
     <section className="aboutus container" id="section-3">
       <div className="about-us-content ">
-        <img src={aImage} className="about-us-image" alt="about-us-img" />
+        <img
+          src={aImage}
+          className={`about-us-image ${styles.aboutusimage}`}
+          alt="about-us-img"
+        />
         <div className="aboutustextcontent">
           <div className="aboutushead">
             <h2>Creating a community of learners.</h2>
