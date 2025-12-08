@@ -1,0 +1,32 @@
+.learncontent {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 10rem;
+  align-items: center;
+}
+
+.learntitle {
+  text-align: left;
+  margin-bottom: 2rem;
+  height: 12rem;
+}
+
+.learnsubcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.learnimage {
+  width: 100%;
+}
+
+@media (max-width: 430px) {
+  .learncontent {
+    display: grid;
+    grid-template-columns: 1.5fr;
+    gap: 4rem;
+  }
+  .learntitle {
+    height: auto;
+  }
+}

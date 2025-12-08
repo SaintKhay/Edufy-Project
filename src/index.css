@@ -1,0 +1,308 @@
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.logo {
+  display: block;
+  margin-left: 0;
+  padding-bottom: 1rem;
+}
+
+.section-padding {
+  padding: 9.6rem 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.sub-hero-image {
+  width: 100%;
+}
+.page-text {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  font-weight: 300;
+  color: #626965;
+}
+.secondary-header {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 5.5rem;
+  padding-bottom: 1rem;
+}
+button {
+  border-radius: 60px;
+  border: 1px solid transparent;
+  padding: 1em 2.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #2e574d;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.btn {
+  background-color: #2e574d;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-color2 {
+  background-color: #c3f499;
+  color: #0d1714;
+}
+
+.btn:hover {
+  border-color: #c3f499;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.icon-faq {
+  width: 24px;
+  height: 24px;
+}
+/* Sub-hero */
+.sub-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+/* About section */
+
+.aboutus {
+  padding-bottom: 9.6rem;
+}
+.about-section {
+  background-color: #f0f5f2;
+  padding: 5rem 2.4rem;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 4rem;
+}
+.about-sub img {
+  display: block;
+  margin-left: 0;
+  padding-bottom: 3rem;
+  width: 4rem;
+}
+.about-head {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  padding-bottom: 3rem;
+}
+.about-text {
+  text-align: left;
+  font-weight: 400;
+}
+
+/* About Us */
+.about-us-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  gap: 8rem;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.about-us-image {
+  width: 100%;
+}
+
+.aboutustextcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.aboutushead h2 {
+  font-size: 4.2rem;
+  padding-bottom: 1rem;
+  line-height: 5rem;
+}
+
+.aboutussubhead {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.aboutussubtext {
+  text-align: left;
+}
+.aboutussubsection {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.padding-btm {
+  padding-bottom: 2rem;
+}
+.aboutusimage {
+  align-self: flex-start;
+  width: 45px;
+}
+/* Head */
+.headtextcontent {
+  margin-bottom: 7.5rem;
+}
+.headtitle {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 5.5rem;
+  padding-bottom: 1rem;
+}
+
+/* Test */
+
+.learnsubsec {
+  border: 1px solid #454a471f;
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.learnheadspan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.learnimage {
+  width: 100%;
+}
+
+.toggleButton {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.toggleButton:focus {
+  outline: 0.2px solid rgba(0, 120, 100, 0.25);
+  border-radius: 6px;
+}
+.toggleicon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+.learnDescription {
+  max-height: 500px;
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  margin-top: 1rem;
+}
+.learnDescription.closed {
+  max-height: 0;
+  opacity: 0;
+}
+.paddingbottom {
+  padding-bottom: 0rem;
+}
+
+/* Subfooter */
+.subfooter {
+  min-width: 100%;
+  height: 50rem;
+  padding: 15rem 0;
+}
+.subfooter-textcontainer h3 {
+  color: #fff;
+  font-size: 5rem;
+  line-height: 5rem;
+  width: 50rem;
+  text-align: left;
+  padding-bottom: 4rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .aboutussubhead {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .learnDescription {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+  }
+}
+@media (max-width: 430px) {
+  .headtitle {
+    font-size: 3.8rem;
+    text-align: left;
+    line-height: 4.5rem;
+  }
+  .section-padding {
+    padding: 4.5rem 0;
+  }
+  .page-text {
+    text-align: left;
+    line-height: 2.7rem;
+    font-size: 1.6rem;
+  }
+  .headtextcontent {
+    margin-bottom: 4.5rem;
+  }
+  .aboutussubhead {
+    font-size: 1.6rem;
+  }
+  .about-us-content {
+    grid-template-columns: 1fr;
+  }
+  .aboutussubhead {
+    font-size: 1.8rem;
+  }
+  .padding-btm {
+    padding-bottom: 3rem;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}

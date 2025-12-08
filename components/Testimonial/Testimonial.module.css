@@ -1,0 +1,34 @@
+.testimonialsubsection {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.testimonialshead {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.testimonial,
+.authorname {
+  color: #0d1714;
+  font-weight: 400;
+}
+.gap {
+  gap: 2rem;
+}
+.aboutauthor {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-self: flex-start;
+  flex: 1;
+}
+.fill {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.twittericon {
+  margin-left: auto;
+}

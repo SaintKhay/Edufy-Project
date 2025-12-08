@@ -1,0 +1,128 @@
+/* Join section */
+
+.joincontainer {
+  margin-bottom: 35rem;
+}
+.joinhead {
+  font-size: 5rem;
+  font-weight: 600;
+}
+.jointext {
+  font-weight: 400;
+}
+
+.joinimage {
+  width: 70%;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.joinsubcontainer {
+  position: relative;
+  background-color: #2e574d;
+  width: 95%;
+  margin: 0 auto;
+  padding: 24rem 0 5rem 0;
+  border-radius: 15px;
+}
+.joinsub {
+  color: #fff;
+  display: grid;
+  gap: 6rem;
+  grid-template-columns: 1fr 1.8fr;
+  width: 70%;
+  margin: 0 auto;
+}
+.joinsubhead {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 4rem;
+  letter-spacing: -1px;
+  text-align: left;
+}
+.joinsubtext {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: 350;
+  text-align: left;
+}
+
+.joinbtndiv {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 4rem;
+}
+
+.joinbtn {
+  background-color: #c3f499;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #0d1714;
+}
+
+.joinsubsection {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.joinsubsection2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  font-size: 1.4rem;
+  padding: 1.2rem 0rem;
+  color: #0d1714;
+  border-radius: 1.5rem;
+  margin-top: 4rem;
+  gap: 0.5rem;
+}
+
+.joinsubsection2 p {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .joinsubcontainer {
+    padding: 13rem 5rem 5rem;
+  }
+
+  .joinimage {
+    width: 80%;
+  }
+  .joinsub {
+    display: block;
+    width: 100%;
+  }
+
+  .joinbtndiv {
+    margin: 2rem 0;
+  }
+  .page-text {
+    font-size: 1.6rem;
+  }
+  .joinsubsection2 {
+    justify-content: space-between;
+    padding: 1.2rem 2.4rem;
+  }
+  .joinsubhead {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .joinsubsection {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .joinsubcontainer {
+    padding: 13rem 2rem 5rem;
+    width: 100%;
+  }
+  .joinimage {
+    top: 0%;
+    width: 90%;
+  }
+}
