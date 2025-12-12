@@ -15,7 +15,7 @@ export default function () {
       >
         <div className="subfooter-textcontainer container">
           <h3>Are you ready to start your course?</h3>
-          <Button text="Get Started Now" classname="btn-color2" />
+          <Button text="Get Started Now" classname="btn-color2 subfooter-btn" />
         </div>
       </div>
     </section>
