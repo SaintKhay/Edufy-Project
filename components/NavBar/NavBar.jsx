@@ -3,10 +3,13 @@ import logo from "../../src/assets/images/logo.svg";
 import searchIcon from "../../src/assets/images/search-icon.svg";
 import dropdown from "../../src/assets/images/dropdown-icon.svg";
 import styles from "../../components/NavBar/NavBar.module.css";
+import openIcon from "../../src/assets/images/open-icon.png";
+import closeIcon from "../../src/assets/images/close-icon.png";
 import { navBarMarkup } from "./navbar";
+import { vh } from "motion";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -19,7 +22,7 @@ export default function Navbar() {
 
   return (
     <header className="container">
-      <nav id="section-1" className={scrolled ? "nav active" : "nav"}>
+      <nav id="section-1" className={scrolled ? styles.navactive : styles.nav}>
         <img
           className={styles.logo}
           src={logo}
@@ -27,7 +30,7 @@ export default function Navbar() {
           fetchPriority="high"
         />
 
-        <ul className={`  ${styles.navlinks}`}>
+        <ul className={!open ? styles.navlinks : styles.navopacity}>
           {navBarMarkup.map((item, index) => (
             <li className={item.className} key={index}>
               <a href={item.link}>{item.title}</a>
@@ -51,7 +54,11 @@ export default function Navbar() {
             className={styles.searchicon}
           />
           <button className={styles.menubtn} onClick={() => setOpen(!open)}>
-            ☰
+            <img
+              className={styles.openicon}
+              srcSet={open ? openIcon : closeIcon}
+              alt={open ? "Open Menu" : "Close Menu"}
+            />
           </button>
           <button className={styles.loginbtn}>Join Our Course</button>
         </span>

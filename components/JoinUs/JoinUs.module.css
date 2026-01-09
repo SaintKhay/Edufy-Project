@@ -72,7 +72,7 @@
   align-items: center;
   background-color: #ffffff;
   font-size: 1.4rem;
-  padding: 1.2rem 0rem;
+  padding: 1.2rem;
   color: #0d1714;
   border-radius: 1.5rem;
   margin-top: 4rem;
@@ -81,6 +81,12 @@
 
 .joinsubsection2 p {
   font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .joinsubcontainer {
+    padding: 16rem 0 5rem;
+  }
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,5 @@
 export default function QuestionsAndAnswers(prop) {
   function toggle(index) {
-    console.log("FAQ toggle called for", index);
     prop.setState((prev) =>
       prev.map((item, i) =>
         i === index ? { ...item, isTrue: !item.isTrue } : item

@@ -91,6 +91,14 @@
 }
 
 /* MEDIA QUERIERS */
+
+@media (max-width: 1024px) {
+  .headerprimary {
+    font-size: 5rem;
+    line-height: 5rem;
+    height: 10rem;
+  }
+}
 @media (max-width: 768px) {
   .hero {
     display: block;
@@ -150,5 +158,11 @@
   .shape1 {
     top: 5rem;
     left: 38%;
+  }
+}
+@media (max-width: 346px) {
+  .headerprimary {
+    font-size: 5rem;
+    height: 14rem;
   }
 }

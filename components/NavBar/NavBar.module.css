@@ -46,14 +46,26 @@ nav {
   background-color: #c3f499;
   color: #0d1714;
 }
-
+.openicon {
+  width: 24px;
+  height: 24px;
+  z-index: 1000;
+  cursor: pointer;
+}
+.searchicon {
+  width: 24px;
+  height: 24px;
+}
 .nav {
   position: sticky;
+  z-index: 100;
   top: 0;
-  z-index: 1000;
   background: transparent;
   transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease,
     backdrop-filter 0.3s ease;
+}
+.navopacity {
+  display: none;
 }
 
 /* When scrolled */
@@ -67,17 +79,31 @@ nav {
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
+  nav {
+    position: relative;
+  }
   .navlinks {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    padding: 0;
+    padding: 2rem;
+    border-radius: 0;
+    top: 0;
+    left: 50%;
+    z-index: 1;
   }
   .loginbtn {
     display: none;
   }
   .menubtn {
     display: block;
-    padding: 1rem 0 1rem 2rem;
+    padding: 1rem 0 1rem 0;
   }
-  .signin {
-    gap: 0;
+  .openicon {
+    z-index: 2;
   }
 }
