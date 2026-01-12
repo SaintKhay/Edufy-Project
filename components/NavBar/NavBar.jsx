@@ -6,7 +6,6 @@ import styles from "../../components/NavBar/NavBar.module.css";
 import openIcon from "../../src/assets/images/open-icon.png";
 import closeIcon from "../../src/assets/images/close-icon.png";
 import { navBarMarkup } from "./navbar";
-import { vh } from "motion";
 
 export default function Navbar() {
   const [open, setOpen] = useState(true);
@@ -53,7 +52,11 @@ export default function Navbar() {
             alt="Search Icon"
             className={styles.searchicon}
           />
-          <button className={styles.menubtn} onClick={() => setOpen(!open)}>
+          <button
+            aria-label="Toggle navigation"
+            className={styles.menubtn}
+            onClick={() => setOpen(!open)}
+          >
             <img
               className={styles.openicon}
               srcSet={open ? openIcon : closeIcon}

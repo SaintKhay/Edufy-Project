@@ -90,6 +90,9 @@
 }
 
 @media (max-width: 768px) {
+  .joincontainer {
+    margin-bottom: 25rem;
+  }
   .joinsubcontainer {
     padding: 13rem 5rem 5rem;
   }
